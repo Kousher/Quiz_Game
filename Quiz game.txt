@@ -1,0 +1,111 @@
+import random,re
+z = 0;c = 1
+list= []
+while c<=5:
+    x = random.randrange(1,6)
+    if x in list:
+        continue
+    list.append(x)
+
+
+
+    if x == 1:
+        print("Who is the president of USA?")
+        print("a.Narendra Modi  b.Justin Trudeau  c.Donald Trump")
+        a = input("Enter:")
+        s = re.findall("[abc]",a)
+        if s :
+
+            if a == "c":
+                print("Correct")
+                z+=1
+            else:
+                print("False")
+        else:
+            print("Please Enter correct choice")
+            print("\n")
+            list.pop()
+            continue
+
+        print("\n")
+
+    elif x == 2:
+        print("Who is the Prime Minister of Bangladesh?")
+        print("a.Sheikh Hasina  b.Khaleda Zia  c.Bill Clinton")
+        a = input("Enter:")
+        s = re.findall("[abc]",a)
+        if s :
+
+            if a == "a":
+                print("Correct")
+                z+=1
+            else:
+                print("False")
+        else:
+            print("Please Enter correct choice")
+            print("\n")
+            list.pop()
+            continue
+        print("\n")
+
+    elif x == 3:
+        print("Who is the Prime Minister of India?")
+        print("a.Mamata Banerjee  b.Narendra Modi  c.Rahul Gandhi")
+        a = input("Enter:")
+        s = re.findall("[abc]",a)
+        if s :
+
+            if a == "b":
+                print("Correct")
+                z+=1
+            else:
+                print("False")
+        else:
+            print("Please Enter correct choice")
+            print("\n")
+            list.pop()
+            continue
+        print("\n")
+
+    elif x == 4:
+        print("Who is the President of Russia?")
+        print("a.Vladimir Putin  b.Dmitry Medvedev  c.Angela Markel")
+        a = input("Enter:")
+        s = re.findall("[abc]",a)
+        if s :
+
+            if a == "a":
+                print("Correct")
+                z+=1
+            else:
+                print("False")
+        else:
+            print("Please Enter correct choice")
+            print("\n")
+            list.pop()
+            continue
+        print("\n")
+
+    elif x == 5:
+        print("Who is the President of Turkey?")
+        print("a.Binali Yildirim  b.Recep Tayyip Erdogan  c.Angela Markel")
+        a = input("Enter:")
+        s = re.findall("[abc]",a)
+        if s :
+
+            if a == "b":
+                print("Correct")
+                z+=1
+            else:
+                print("False")
+        else:
+            print("Please Enter correct choice")
+            print("\n")
+            list.pop()
+            continue
+        print("\n")
+
+    c+=1
+
+print("Congratulation You Complete the Quiz")
+print("Your Score is ",z,"/5")
